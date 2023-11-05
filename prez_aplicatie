@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descriere Aplicație pentru Bibliotecă</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aplicație pentru bibliotecă</h1>
+    <p>Funcționalități cheie:</p>
+    
+    <ul>
+        <li>Căutarea cărților în baza de date a bibliotecii.</li>
+        <li>Înregistrarea și gestionarea utilizatorilor, inclusiv împrumuturi și returnări.</li>
+        <li>Informații detaliate despre cărți și autori.</li>
+        <li>Rezervări pentru cărți disponibile limitat.</li>
+        <li>Notificări pentru utilizatori privind împrumuturile și returnările.</li>
+    </ul>
+    
+	<p>Roluri și entități:</p>
+	
+	
+	   <ul>Roluri:
+             <li>Utilizator: Poate căuta cărți, împrumuta și returna cărți, crea conturi și face rezervări.</li>  
+			 <li>Bibliotecar: Poate gestiona cărțile, împrumuturile și rezervările.</li>
+			 <li>Administrator: Poate administra toate aspectele aplicației.</li>
+              
+	   </ul>
+	   <ul>Entități:
+	         <li>Cărți: Informații despre cărți, cum ar fi titlu, autor, gen, disponibilitate, etc.</li>
+			 <li>Autori: Detalii despre autori, inclusiv nume, biografie, lucrări, etc.</li>
+			 <li>Utilizatori: Informații despre utilizatori, cum ar fi nume, prenume, email, rol, etc.</li>
+			 <li>Împrumuturi: Istoricul împrumuturilor, cu detalii despre cărți, utilizatori și date relevante.</li>
+			 <li>Rezervări: Informații despre rezervările cărților pentru utilizatori.</li>
+	   </ul>
+	  
+	
+	<p>Procesele specifice aplicației:</p>
+	 <ul>
+	     <li>Căutarea cărților</li>
+		 <li>Împrumut de cărți</li>
+		 <li>Returnarea cărților</li>
+		 <li>Gestionarea utilizatorilor</li>
+		 <li>Rezervarea cărților</li>
+		 <li>Notificări și comunicare între utilizator și aplicație</li>
+		 <li>Gestionarea colecției de cărți</li>
+		 <li>Administrarea aplicației</li>
+	 </ul>
+	
+	<p>Relațiile dintre acestea:</p>
+	 <ul>
+	    <li>Căutarea cărților: Procesul de căutare folosește baza de date pentru a găsi cărțile care corespund criteriilor utilizatorului.</li>
+		<li>Împrumut și returnarea cărților: Procesul de împrumut și returnare utilizează baza de date pentru a actualiza starea cărților și a înregistrărilor de împrumut.</li>
+		<li>Gestionarea utilizatorilor: Procesul de gestionare a utilizatorilor implică actualizarea și întreținerea datelor utilizatorilor în baza de date.</li>
+		<li>Rezervarea cărților: Procesul de rezervare folosește baza de date pentru a înregistra rezervările și pentru a gestiona starea cărților rezervate.</li>
+		<li>Notificări și comunicare: Procesul de generare a notificărilor este conectat la baza de date pentru a obține informații relevante și pentru a distribui notificările către utilizatori.</li>
+		<li>Gestionarea colecției de cărți: Procesul de gestionare a colecției de cărți implică modificarea stării și detaliilor cărților în baza de date.</li>
+		<li>Administrarea aplicației: Procesul de administrare a aplicației este legat de configurarea tehnică a aplicației, inclusiv a datelor de bază.</li>
+	 </ul>
+	 
+	<p>Componentele principale</p>
+	<ul>
+	    <li>Front-end</li>
+		<li>Back-end</li>
+		<li>Baza de date</li>
+		<li>Roluri și entități</li>
+		<li>Autentificare și autorizare</li>
+		<li>Admin Panel</li>
+	</ul>
+	
+	<p>Baza de date</p>
+	<ul>
+	    <li>Tabelul "Cărți" conține informații despre cărți, cum ar fi titlu, autor, an de publicare, gen și starea de disponibilitate a cărților.</li>
+		<li>Tabelul "Autori" stochează date despre autori, inclusiv nume și, opțional, o biografie a autorului.</li>
+		<li>Tabelul "Utilizatori" conține informații despre utilizatori, inclusiv nume, prenume, adresă de email, parolă criptată și rolul utilizatorului (utilizator obișnuit, bibliotecar sau administrator).</li>
+		<li>Tabelul "Împrumuturi" urmărește istoricul împrumuturilor de cărți, inclusiv detaliile despre cartea împrumutată, utilizatorul care a făcut împrumutul, data împrumutului, data de returnare prevăzută, data de returnare efectivă (opțională) și starea împrumutului.</li>
+		<li>Tabelul "Rezervări" conține informații despre rezervările cărților, inclusiv detaliile despre cartea rezervată, utilizatorul care a făcut rezervarea, data rezervării și starea rezervării (în așteptare, aprobată sau respinsă).</li>
+	</ul>
+	
+	<p>Solutia de implementare</p>
+	<ul>
+	     <li>Front-end: Front-end-ul oferă o interfață web prietenoasă, care permite utilizatorilor să căute cărți, să vizualizeze detalii despre cărți, să împrumute, să returneze și să facă rezervări. </li>
+		 <li>Back-end: Serverul back-end gestionează logica de afaceri a aplicației. Acesta procesează cererile primite de la front-end și interacționează cu baza de date pentru a citi și actualiza datele.</li>
+		 <li>Baza de date: Baza de date stochează date despre cărți, autori, utilizatori, împrumuturi, returnări și rezervări.</li>
+		 <li>Securitate: Datele sensibile sunt criptate pentru a proteja confidențialitatea informațiilor.</li>
+		 <li>Funcționalități specifice: Sistemul permite utilizatorilor să caute cărți după criterii diverse, să împrumute și să returneze cărți în termen, să facă rezervări pentru cărți indisponibile, și să primească notificări privind evenimentele relevante, cum ar fi termenele de returnare.</li>
+	</ul>
+</body>
+</html>
