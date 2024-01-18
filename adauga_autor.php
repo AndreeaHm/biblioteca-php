@@ -17,7 +17,7 @@
     <h1>Adaugă Autor Nou</h1>
 
     <?php
-    include('db.php');
+    include('db.php'); // Asigurați-vă că ați inclus fișierul de conexiune la baza de date
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $nume = $_POST['nume'];
