@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca online cu o selecție vastă de cărți și autori. Citește și descoperă noi titluri în colecția noastră." />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Login</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=6651754646"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', '6651754646');
+</script>
+
 </head>
 <body>
     <h2>Login</h2>
@@ -67,6 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $userRole = $row['rol_user'];
             $_SESSION['user_role'] = $userRole;
+            $_SESSION['email'] = $email;
 
             if ($userRole == 'utilizator') {
                 header('Location: utilizator.php');
