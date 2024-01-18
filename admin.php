@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <meta name="description" content="Biblioteca online cu o selecție vastă de cărți și autori. Citește și descoperă noi titluri în colecția noastră." />
+    <title>Panou de Control (Admin)</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=6651754646"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', '6651754646');
+</script>
+
 </head>
 <body>
-    <h2>Bun venit pe pagina adminului!</h2>
+    <h1>Panou de Control (Admin)</h1>
+
+    <ul>
+        <li><a href="gestionare_carti.php">Gestionare Cărți</a></li>
+        <li><a href="gestionare_autori.php">Gestionare Autori</a></li>
+        <li><a href="gestionare_utilizatori.php">Gestionare Utilizatori</a></li>
+        <li><a href="utilizator.php">Pagina Principala</a></li>
+        <li><a href="gestionare_autori_req.php">Gestionare Adaugari Autori</a></li>
+        <li><a href="gestionare_carti_req.php">Gestionare Adaugari Carti</a></li>
+    </ul>
 </body>
 </html>
