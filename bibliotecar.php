@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliotecar</title>
+    <meta name="description" content="Biblioteca online cu o selecție vastă de cărți și autori. Citește și descoperă noi titluri în colecția noastră." />
+    <title>Panou de Control pentru Bibliotecar</title>
 </head>
 <body>
-    <h2>Bun venit pe pagina bibliotecarului!</h2>
+    <h1>Panou de Control pentru Bibliotecar</h1>
+    <ul>
+        <li><a href="gestionare_carti.php">Gestionare Cărți</a></li>
+        <li><a href="gestionare_autori.php">Gestionare Autori</a></li>
+        <li><a href="utilizator.php">Pagina Principala</a></li>
+        <li><a href="gestionare_carti_req.php">Gestionare Cereri Cărți</a></li>
+        <li><a href="gestionare_autori_req.php">Gestionare Cereri Autori</a></li>
+    </ul>
 </body>
 </html>
