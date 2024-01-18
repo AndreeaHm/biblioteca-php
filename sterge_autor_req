@@ -1,0 +1,21 @@
+<?php
+session_start();
+
+include("db.php"); 
+
+if(isset($_GET['id']) && is_numeric($_GET['id'])) {
+    $id_autor_req = $_GET['id'];
+    
+    $sql_sterge_cerere = "DELETE FROM aut_req WHERE id_autor_req = $id_autor_req";
+    if ($conn->query($sql_sterge_cerere) === TRUE) {
+        header("Location: gestionare_autori_req.php");
+        exit();
+    } else {
+        echo "Eroare la ștergerea cererii: " . $conn->error;
+    }
+} else {
+    echo "ID-ul cererii specificat este invalid.";
+}
+
+$conn->close();
+?>
